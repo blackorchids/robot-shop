@@ -17,4 +17,4 @@ current=`date "+%Y-%m-%d %H:%M:%S"`
 timeStamp=`date -d "$current" +%s`
 Date=`date "+%N"`
 currentTimeStamp=$((timeStamp*1000+$((10#$Date))/1000000))
-curl -X POST https://168.1.53.208/api/releases -H "Authorization: apiToken 3GJWpwdWwI7O" -H "Content-Type: application/json" -d '{"name": "'${version}'", "start": '${currentTimeStamp}', "applications": [{"name": "robot-shop-ce"}]}' -k
+curl -X POST https://168.1.53.208/api/releases -H "Authorization: apiToken hyTT9rt3RQWwrHJja_aTDw" -H "Content-Type: application/json" -d '{"name": "'${version}'", "start": '${currentTimeStamp}', "applications": [{"name": "robot-shop-ce"}]}' -k
