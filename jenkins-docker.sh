@@ -3,12 +3,12 @@ export INSTANA_AGENT_KEY="Y1WeVUl6klDiPi3WPtqBMv"
 
 # Build 
 echo start build
-sudo docker compose build
+sudo docker-compose build
 
 # Deploy
 echo start up
 #sudo nohup docker compose up >/dev/null 2>&1 &
-docker compose up
+docker-compose up
 echo "finish start up"
 
 # Send request with time and version to Instana
