@@ -8,6 +8,7 @@ sudo docker compose build
 # Deploy
 echo start up
 sudo nohup docker compose up >/dev/null 2>&1 &
+echo "finish start up"
 
 # Send request with time and version to Instana
 line=`cat .env |head -n 3|tail -n 1`
